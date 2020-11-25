@@ -1,0 +1,19 @@
+entry class MysecondClass:
+    public function main() returns int:
+        print("this method is main which is public");
+        return 0;
+    end
+end
+
+class MyClass:
+    public field publicVar int;
+    private field privateVar int;
+    public function publicMethod(a:int) returns int:
+        print("this method is public");
+        return 0;
+    end
+    private function privateMethod(b:int) returns int:
+        print("this method is private");
+        return 0;
+    end
+end
