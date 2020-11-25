@@ -45,12 +45,21 @@ public class ProgramPrinter implements MoolaListener {
         try(FileWriter writer = new FileWriter("./output/output.txt",true)) {
 
             if(isentry != true){
-                writer.write("    class: " + ctx.className.getText() + "{\n");
-                System.out.println("    class: " + ctx.className.getText() + "{");
 
+                if(ctx.classParent != null) {
+
+                    writer.write("    class: " + ctx.className.getText()
+                            + "(/ class parent: (" + ctx.classParent.getText()
+                            + "))?{\n");
+                    System.out.println("    class: " + ctx.className.getText() + "/( class parent: (" + ctx.classParent.getText() + "))?{");
+
+                }else{
+                    writer.write("    class: " + ctx.className.getText() + "{\n");
+                    System.out.println("    class: " + ctx.className.getText()  + "{");
+                }
             }else{
                 writer.write(" class: " + ctx.className.getText() + "{\n");
-                System.out.println(" class: " + ctx.className.getText() + "{");
+                System.out.println(" class: " + ctx.className.getText()+  "{");
                 isentry = false;
             }
 

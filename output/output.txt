@@ -286,3 +286,1016 @@ start program{
         }
     }
 }
+start program{
+    maingen.MoolaParser$EntryClassDeclarationContext class: Sample1{
+        class method: main/ return type=int/ access modifier=public{
+            var:array_size
+            var:array
+            var:i
+            var:val
+        }
+    }
+    class: BinarySearch{
+        field:data/ type=int[]/ access modifier=private
+        class method: doSearch/ return type=int/ access modifier=private{
+            var:middle
+            var:foundVal
+        }
+        class method: find/ return type=int/ access modifier=public{
+            var:value1
+        }
+    }
+}
+start program{
+    maingen.MoolaParser$EntryClassDeclarationContext class: Sample1{
+        class method: main/ return type=int/ access modifier=public{
+            var:array_size
+            var:array
+            var:i
+            var:val
+        }
+    }
+    class: BinarySearch/ class parent:entryclassSample1:publicfunctionmain()returnsint:vararray_size=10;vararray=newint[array_size];vari=0;if(i)begincontinue;break;endwhile(i<array_size)beginif(i==array_size/2)beginarray[i]=1;continue;endarray[i]=i+1;i++;endi=0;while(i<array_size)beginvarval=newBinarySearch().doSearch(1,0,array.length-1);val=newBinarySearch().doSearch(0,array.length-1);endreturnfalse;endendclassBinarySearch:privatefielddataint[];privatefunctiondoSearch(value:int,_begin:int,_end:int)returnsint:varmiddle=(_begin+_end)/2;varfoundVal=doSearch(value,_begin,middle);if(!foundVal)foundVal=doSearch(value,middle+1,_end);returnfoundVal+newBinarySearch().data.length;endpublicfunctionfind(value:int)returnsint:varvalue1=_doSearch(value,0,_data.length-1).toString();returndoSearch(value,0,data.length-1).toString();endend<EOF>
+        field:data/ type=int[]/ access modifier=private
+        class method: doSearch/ return type=int/ access modifier=private{
+            var:middle
+            var:foundVal
+        }
+        class method: find/ return type=int/ access modifier=public{
+            var:value1
+        }
+    }
+}
+start program{
+    maingen.MoolaParser$EntryClassDeclarationContext class: MysecondClass/ class parent:entryclassMysecondClass:publicfunctionmain()returnsint:print("this method is main which is public");return0;endend{
+        class method: main/ return type=int/ access modifier=public{
+        }
+    }
+    class: MyClass/ class parent:entryclassMysecondClass:publicfunctionmain()returnsint:print("this method is main which is public");return0;endendclassMyClassinheritsMysecondClass:publicfieldpublicVarint;privatefieldprivateVarint;publicfunctionpublicMethod(a:int)returnsint:print("this method is public");return0;endprivatefunctionprivateMethod(b:int)returnsint:print("this method is private");return0;endend<EOF>{
+        field:publicVar/ type=int/ access modifier=public
+        field:privateVar/ type=int/ access modifier=private
+        class method: publicMethod/ return type=int/ access modifier=public{
+        }
+        class method: privateMethod/ return type=int/ access modifier=private{
+        }
+    }
+}
+start program{
+    maingen.MoolaParser$EntryClassDeclarationContext class: MysecondClass/ class parent:entryclassMysecondClass:publicfunctionmain()returnsint:print("this method is main which is public");return0;endend{
+        class method: main/ return type=int/ access modifier=public{
+        }
+    }
+    class: MyClass/ class parent:entryclassMysecondClass:publicfunctionmain()returnsint:print("this method is main which is public");return0;endendclassMyClassinheritsMysecondClass:publicfieldpublicVarint;privatefieldprivateVarint;publicfunctionpublicMethod(a:int)returnsint:print("this method is public");return0;endprivatefunctionprivateMethod(b:int)returnsint:print("this method is private");return0;endend<EOF>{
+        field:publicVar/ type=int/ access modifier=public
+        field:privateVar/ type=int/ access modifier=private
+        class method: publicMethod/ return type=int/ access modifier=public{
+        }
+        class method: privateMethod/ return type=int/ access modifier=private{
+        }
+    }
+}
+start program{
+    maingen.MoolaParser$EntryClassDeclarationContext class: MysecondClass/ class parent:entryclassMysecondClass:publicfunctionmain()returnsint:print("this method is main which is public");return0;endend{
+        class method: main/ return type=int/ access modifier=public{
+        }
+    }
+    class: MyClass/ class parent:entryclassMysecondClass:publicfunctionmain()returnsint:print("this method is main which is public");return0;endendclassMyClassinheritsMysecondClass:publicfieldpublicVarint;privatefieldprivateVarint;publicfunctionpublicMethod(a:int)returnsint:print("this method is public");return0;endprivatefunctionprivateMethod(b:int)returnsint:print("this method is private");return0;endend<EOF>{
+        field:publicVar/ type=int/ access modifier=public
+        field:privateVar/ type=int/ access modifier=private
+        class method: publicMethod/ return type=int/ access modifier=public{
+        }
+        class method: privateMethod/ return type=int/ access modifier=private{
+        }
+    }
+}
+start program{
+    maingen.MoolaParser$EntryClassDeclarationContext class: MysecondClass/ class parent:entryclassMysecondClass:publicfunctionmain()returnsint:print("this method is main which is public");return0;endend{
+        class method: main/ return type=int/ access modifier=public{
+        }
+    }
+    class: MyClass/ class parent:entryclassMysecondClass:publicfunctionmain()returnsint:print("this method is main which is public");return0;endendclassMyClassinheritsMysecondClass:publicfieldpublicVarint;privatefieldprivateVarint;publicfunctionpublicMethod(a:int)returnsint:print("this method is public");return0;endprivatefunctionprivateMethod(b:int)returnsint:print("this method is private");return0;endend<EOF>{
+        field:publicVar/ type=int/ access modifier=public
+        field:privateVar/ type=int/ access modifier=private
+        class method: publicMethod/ return type=int/ access modifier=public{
+        }
+        class method: privateMethod/ return type=int/ access modifier=private{
+        }
+    }
+}
+start program{
+    maingen.MoolaParser$EntryClassDeclarationContext class: MysecondClass/ class parent:entryclassMysecondClass:publicfunctionmain()returnsint:print("this method is main which is public");return0;endend{
+        class method: main/ return type=int/ access modifier=public{
+        }
+    }
+    class: MyClass/ class parent:entryclassMysecondClass:publicfunctionmain()returnsint:print("this method is main which is public");return0;endendclassMyClassinheritsMysecondClass:publicfieldpublicVarint;privatefieldprivateVarint;publicfunctionpublicMethod(a:int)returnsint:print("this method is public");return0;endprivatefunctionprivateMethod(b:int)returnsint:print("this method is private");return0;endend<EOF>{
+start program{
+    maingen.MoolaParser$EntryClassDeclarationContext class: MysecondClass/ class parent:entryclassMysecondClass:publicfunctionmain()returnsint:print("this method is main which is public");return0;endend{
+start program{
+    maingen.MoolaParser$EntryClassDeclarationContext class: MysecondClass/ class parent:entryclassMysecondClass:publicfunctionmain()returnsint:print("this method is main which is public");return0;endend{
+        class method: main/ return type=int/ access modifier=public{
+        }
+    }
+    class: MyClass/ class parent:entryclassMysecondClass:publicfunctionmain()returnsint:print("this method is main which is public");return0;endendclassMyClassinheritsMysecondClass:publicfieldpublicVarint;privatefieldprivateVarint;publicfunctionpublicMethod(a:int)returnsint:print("this method is public");return0;endprivatefunctionprivateMethod(b:int)returnsint:print("this method is private");return0;endend<EOF>{
+        field:publicVar/ type=int/ access modifier=public
+        field:privateVar/ type=int/ access modifier=private
+        class method: publicMethod/ return type=int/ access modifier=public{
+        }
+        class method: privateMethod/ return type=int/ access modifier=private{
+        }
+    }
+}
+start program{
+    maingen.MoolaParser$EntryClassDeclarationContext class: MysecondClass/ class parent:entryclassMysecondClass:publicfunctionmain()returnsint:print("this method is main which is public");return0;endend{
+        class method: main/ return type=int/ access modifier=public{
+        }
+    }
+    class: MyClass/ class parent:entryclassMysecondClass:publicfunctionmain()returnsint:print("this method is main which is public");return0;endendclassMyClassinheritsMysecondClass:publicfieldpublicVarint;privatefieldprivateVarint;publicfunctionpublicMethod(a:int)returnsint:print("this method is public");return0;endprivatefunctionprivateMethod(b:int)returnsint:print("this method is private");return0;endend<EOF>{
+        field:publicVar/ type=int/ access modifier=public
+        field:privateVar/ type=int/ access modifier=private
+        class method: publicMethod/ return type=int/ access modifier=public{
+        }
+        class method: privateMethod/ return type=int/ access modifier=private{
+        }
+    }
+}
+start program{
+    maingen.MoolaParser$EntryClassDeclarationContext class: MysecondClass/ class parent:entryclassMysecondClass:publicfunctionmain()returnsint:print("this method is main which is public");return0;endend{
+        class method: main/ return type=int/ access modifier=public{
+        }
+    }
+    class: MyClass/ class parent:entryclassMysecondClass:publicfunctionmain()returnsint:print("this method is main which is public");return0;endendclassMyClassinheritsMysecondClass:publicfieldpublicVarint;privatefieldprivateVarint;publicfunctionpublicMethod(a:int)returnsint:print("this method is public");return0;endprivatefunctionprivateMethod(b:int)returnsint:print("this method is private");return0;endend<EOF>{
+        field:publicVar/ type=int/ access modifier=public
+        field:privateVar/ type=int/ access modifier=private
+        class method: publicMethod/ return type=int/ access modifier=public{
+        }
+        class method: privateMethod/ return type=int/ access modifier=private{
+        }
+    }
+}
+start program{
+    maingen.MoolaParser$EntryClassDeclarationContext class: MysecondClass{
+        class method: main/ return type=int/ access modifier=public{
+        }
+    }
+    class: MyClass/ class parent:entryclassMysecondClass:publicfunctionmain()returnsint:print("this method is main which is public");return0;endendclassMyClassinheritsMysecondClass:publicfieldpublicVarint;privatefieldprivateVarint;publicfunctionpublicMethod(a:int)returnsint:print("this method is public");return0;endprivatefunctionprivateMethod(b:int)returnsint:print("this method is private");return0;endend<EOF>{
+        field:publicVar/ type=int/ access modifier=public
+        field:privateVar/ type=int/ access modifier=private
+        class method: publicMethod/ return type=int/ access modifier=public{
+        }
+        class method: privateMethod/ return type=int/ access modifier=private{
+        }
+    }
+}
+start program{
+    maingen.MoolaParser$EntryClassDeclarationContext class: MysecondClass{
+        class method: main/ return type=int/ access modifier=public{
+        }
+    }
+    class: MyClass/ class parent:entryclassMysecondClass:publicfunctionmain()returnsint:print("this method is main which is public");return0;endendclassMyClassinheritsMysecondClass:publicfieldpublicVarint;privatefieldprivateVarint;publicfunctionpublicMethod(a:int)returnsint:print("this method is public");return0;endprivatefunctionprivateMethod(b:int)returnsint:print("this method is private");return0;endend<EOF>{
+        field:publicVar/ type=int/ access modifier=public
+        field:privateVar/ type=int/ access modifier=private
+        class method: publicMethod/ return type=int/ access modifier=public{
+        }
+        class method: privateMethod/ return type=int/ access modifier=private{
+        }
+    }
+}
+start program{
+    maingen.MoolaParser$EntryClassDeclarationContext class: MysecondClass{
+        class method: main/ return type=int/ access modifier=public{
+        }
+    }
+    class: MyClass/ class parent:entryclassMysecondClass:publicfunctionmain()returnsint:print("this method is main which is public");return0;endendclassMyClassinheritsMysecondClass:publicfieldpublicVarint;privatefieldprivateVarint;publicfunctionpublicMethod(a:int)returnsint:print("this method is public");return0;endprivatefunctionprivateMethod(b:int)returnsint:print("this method is private");return0;endend<EOF>{
+        field:publicVar/ type=int/ access modifier=public
+        field:privateVar/ type=int/ access modifier=private
+        class method: publicMethod/ return type=int/ access modifier=public{
+        }
+        class method: privateMethod/ return type=int/ access modifier=private{
+        }
+    }
+}
+start program{
+    maingen.MoolaParser$EntryClassDeclarationContext class: MysecondClass{
+        class method: main/ return type=int/ access modifier=public{
+        }
+    }
+    class: MyClass/ class parent:entryclassMysecondClass:publicfunctionmain()returnsint:print("this method is main which is public");return0;endendclassMyClassinheritsMysecondClass:publicfieldpublicVarint;privatefieldprivateVarint;publicfunctionpublicMethod(a:int)returnsint:print("this method is public");return0;endprivatefunctionprivateMethod(b:int)returnsint:print("this method is private");return0;endend<EOF>{
+        field:publicVar/ type=int/ access modifier=public
+        field:privateVar/ type=int/ access modifier=private
+        class method: publicMethod/ return type=int/ access modifier=public{
+        }
+        class method: privateMethod/ return type=int/ access modifier=private{
+        }
+    }
+}
+start program{
+    maingen.MoolaParser$EntryClassDeclarationContext class: MysecondClass{
+        class method: main/ return type=int/ access modifier=public{
+        }
+    }
+    class: MyClass/ class parent:entryclassMysecondClass:publicfunctionmain()returnsint:print("this method is main which is public");return0;endendclassMyClassinheritsMysecondClass:publicfieldpublicVarint;privatefieldprivateVarint;publicfunctionpublicMethod(a:int)returnsint:print("this method is public");return0;endprivatefunctionprivateMethod(b:int)returnsint:print("this method is private");return0;endend<EOF>{
+        field:publicVar/ type=int/ access modifier=public
+        field:privateVar/ type=int/ access modifier=private
+        class method: publicMethod/ return type=int/ access modifier=public{
+        }
+        class method: privateMethod/ return type=int/ access modifier=private{
+        }
+    }
+}
+start program{
+    maingen.MoolaParser$EntryClassDeclarationContext class: MysecondClass{
+        class method: main/ return type=int/ access modifier=public{
+        }
+    }
+    class: MyClass/ class parent:MysecondClass{
+        field:publicVar/ type=int/ access modifier=public
+        field:privateVar/ type=int/ access modifier=private
+        class method: publicMethod/ return type=int/ access modifier=public{
+        }
+        class method: privateMethod/ return type=int/ access modifier=private{
+        }
+    }
+}
+start program{
+    maingen.MoolaParser$EntryClassDeclarationContext class: MysecondClass{
+        class method: main/ return type=int/ access modifier=public{
+        }
+    }
+    class: MyClass/ class parent:<missing ID>{
+        field:publicVar/ type=int/ access modifier=public
+        field:privateVar/ type=int/ access modifier=private
+        class method: publicMethod/ return type=int/ access modifier=public{
+        }
+        class method: privateMethod/ return type=int/ access modifier=private{
+        }
+    }
+}
+start program{
+    maingen.MoolaParser$EntryClassDeclarationContext class: MysecondClass{
+        class method: main/ return type=int/ access modifier=public{
+        }
+    }
+start program{
+    maingen.MoolaParser$EntryClassDeclarationContext class: MysecondClass{
+        class method: main/ return type=int/ access modifier=public{
+        }
+    }
+    class: MyClass{
+        field:publicVar/ type=int/ access modifier=public
+        field:privateVar/ type=int/ access modifier=private
+        class method: publicMethod/ return type=int/ access modifier=public{
+        }
+        class method: privateMethod/ return type=int/ access modifier=private{
+        }
+    }
+}
+start program{
+    maingen.MoolaParser$EntryClassDeclarationContext class: MysecondClass{
+        class method: main/ return type=int/ access modifier=public{
+        }
+    }
+    class: MyClass/ class parent:MysecondClass{
+        field:publicVar/ type=int/ access modifier=public
+        field:privateVar/ type=int/ access modifier=private
+        class method: publicMethod/ return type=int/ access modifier=public{
+        }
+        class method: privateMethod/ return type=int/ access modifier=private{
+        }
+    }
+}
+start program{
+    maingen.MoolaParser$EntryClassDeclarationContext class: MysecondClass{
+        class method: main/ return type=int/ access modifier=public{
+        }
+    }
+    class: MyClass(/ class parent: (MysecondClass))?{
+        field:publicVar/ type=int/ access modifier=public
+        field:privateVar/ type=int/ access modifier=private
+        class method: publicMethod/ return type=int/ access modifier=public{
+        }
+        class method: privateMethod/ return type=int/ access modifier=private{
+        }
+    }
+}
+start program{
+    maingen.MoolaParser$EntryClassDeclarationContext class: MysecondClass{
+        class method: main/ return type=int/ access modifier=public{
+        }
+    }
+    class: MyClass(/ class parent: (MysecondClass))?{
+        field:publicVar/ type=int/ access modifier=public
+        field:privateVar/ type=int/ access modifier=private
+        class method: publicMethod/ return type=int/ access modifier=public{
+        }
+        class method: privateMethod/ return type=int/ access modifier=private{
+        }
+    }
+}
+start program{
+    maingen.MoolaParser$EntryClassDeclarationContext class: MysecondClass{
+        class method: main/ return type=int/ access modifier=public{
+        }
+    }
+    class: MyClass(/ class parent: (MysecondClass))?{
+        field:publicVar/ type=int/ access modifier=public
+        field:privateVar/ type=int/ access modifier=private
+        class method: publicMethod/ return type=int/ access modifier=public{
+        }
+        class method: privateMethod/ return type=int/ access modifier=private{
+        }
+    }
+}
+start program{
+    maingen.MoolaParser$EntryClassDeclarationContext class: Sample1{
+        class method: main/ return type=int/ access modifier=public{
+            var:array_size
+            var:array
+            var:i
+            var:val
+        }
+    }
+    class: BinarySearch{
+        field:data/ type=int[]/ access modifier=private
+        class method: doSearch/ return type=int/ access modifier=private{
+            var:middle
+            var:foundVal
+        }
+        class method: find/ return type=int/ access modifier=public{
+            var:value1
+        }
+    }
+}
+start program{
+    maingen.MoolaParser$EntryClassDeclarationContext class: MainClass{
+        class method: main/ return type=int/ access modifier=public{
+        }
+        field:result/ type=int/ access modifier=public
+        class method: getSum/ return type=int/ access modifier=public{
+        }
+    }
+}
+start program{
+    maingen.MoolaParser$EntryClassDeclarationContext class: MainClass{
+        class method: main/ return type=int/ access modifier=public{
+        }
+        field:result/ type=int/ access modifier=public
+        class method: getSum/ return type=int/ access modifier=public{
+        }
+    }
+}
+start program{
+    maingen.MoolaParser$EntryClassDeclarationContext class: MainClass{
+        class method: main/ return type=int/ access modifier=public{
+        }
+        field:result/ type=int/ access modifier=public
+        class method: getSum/ return type=int/ access modifier=public{
+        }
+    }
+}
+start program{
+    maingen.MoolaParser$EntryClassDeclarationContext class: MainClass{
+        class method: main/ return type=int/ access modifier=public{
+        }
+        field:result/ type=int/ access modifier=public
+        class method: getSum/ return type=int/ access modifier=public{
+        }
+    }
+}
+start program{
+    maingen.MoolaParser$EntryClassDeclarationContext class: MainClass{
+        class method: main/ return type=int/ access modifier=public{
+        }
+        field:result/ type=int/ access modifier=public
+        class method: getSum/ return type=int/ access modifier=public{
+        }
+    }
+}
+start program{
+    maingen.MoolaParser$EntryClassDeclarationContext class: MainClass{
+        class method: main/ return type=int/ access modifier=public{
+        }
+        field:result/ type=int/ access modifier=public
+        class method: getSum/ return type=int/ access modifier=public{
+        }
+    }
+}
+start program{
+    maingen.MoolaParser$EntryClassDeclarationContext class: MainClass{
+        class method: main/ return type=int/ access modifier=public{
+        }
+        field:result/ type=int/ access modifier=public
+        class method: getSum/ return type=int/ access modifier=public{
+        }
+    }
+}
+start program{
+    maingen.MoolaParser$EntryClassDeclarationContext class: MainClass{
+        class method: main/ return type=int/ access modifier=public{
+        }
+        class method: getSum/ return type=int/ access modifier=public{
+        }
+    }
+}
+start program{
+    maingen.MoolaParser$EntryClassDeclarationContext class: MainClass{
+        class method: main/ return type=int/ access modifier=public{
+        }
+        class method: getSum/ return type=int/ access modifier=public{
+        }
+    }
+}
+start program{
+    maingen.MoolaParser$EntryClassDeclarationContext class: MainClass{
+        class method: main/ return type=int/ access modifier=public{
+        }
+        class method: getSum/ return type=int/ access modifier=public{
+        }
+    }
+}
+start program{
+    maingen.MoolaParser$EntryClassDeclarationContext class: MainClass{
+        class method: main/ return type=int/ access modifier=public{
+        }
+    }
+}
+start program{
+    maingen.MoolaParser$EntryClassDeclarationContext class: MainClass{
+        class method: main/ return type=int/ access modifier=public{
+        }
+        class method: sum/ return type=int/ access modifier=private{
+        }
+    }
+}
+start program{
+    maingen.MoolaParser$EntryClassDeclarationContext class: MainClass{
+        class method: main/ return type=int/ access modifier=public{
+        }
+        class method: sum/ return type=int/ access modifier=private{
+        }
+    }
+}
+start program{
+    maingen.MoolaParser$EntryClassDeclarationContext class: MainClass{
+        class method: main/ return type=int/ access modifier=public{
+        }
+        class method: publicMethod/ return type=int/ access modifier=public{
+        }
+    }
+}
+start program{
+    maingen.MoolaParser$EntryClassDeclarationContext class: MainClass{
+        class method: main/ return type=int/ access modifier=public{
+        }
+        class method: publicMethod/ return type=int/ access modifier=public{
+        }
+    }
+}
+start program{
+    maingen.MoolaParser$EntryClassDeclarationContext class: MainClass{
+        class method: main/ return type=int/ access modifier=public{
+        }
+    }
+}
+start program{
+    maingen.MoolaParser$EntryClassDeclarationContext class: MainClass{
+        class method: main/ return type=int/ access modifier=public{
+        }
+        field:privateVar/ type=int/ access modifier=private
+        class method: publicMethod/ return type=int/ access modifier=public{
+        }
+    }
+}
+start program{
+    maingen.MoolaParser$EntryClassDeclarationContext class: MainClass{
+        field:publicVar/ type=int/ access modifier=public
+        field:privateVar/ type=int/ access modifier=private
+        class method: publicMethod/ return type=int/ access modifier=public{
+        }
+        class method: privateMethod/ return type=int/ access modifier=private{
+        }
+    }
+}
+start program{
+    maingen.MoolaParser$EntryClassDeclarationContext class: MainClass{
+        field:Sum/ type=int/ access modifier=public
+        field:Sub/ type=int/ access modifier=private
+        class method: CalculateSub/ return type=int/ access modifier=public{
+        }
+        class method: privateMethod/ return type=int/ access modifier=private{
+        }
+    }
+}
+start program{
+    maingen.MoolaParser$EntryClassDeclarationContext class: MainClass{
+        field:Sum/ type=int/ access modifier=public
+        field:Sub/ type=int/ access modifier=private
+        class method: CalculateSub/ return type=int/ access modifier=public{
+        }
+        class method: privateMethod/ return type=int/ access modifier=private{
+        }
+    }
+}
+start program{
+    maingen.MoolaParser$EntryClassDeclarationContext class: MainClass{
+        field:Sum/ type=int/ access modifier=public
+        field:Sub/ type=int/ access modifier=private
+        class method: CalculateSub/ return type=int/ access modifier=public{
+        }
+        class method: privateMethod/ return type=int/ access modifier=private{
+        }
+    }
+}
+start program{
+    maingen.MoolaParser$EntryClassDeclarationContext class: MainClass{
+        field:Sum/ type=int/ access modifier=public
+        field:Sub/ type=int/ access modifier=private
+        class method: CalculateSub/ return type=int/ access modifier=public{
+        }
+        class method: privateMethod/ return type=int/ access modifier=private{
+        }
+    }
+}
+start program{
+    maingen.MoolaParser$EntryClassDeclarationContext class: MainClass{
+        field:Sum/ type=int/ access modifier=public
+        field:Sub/ type=int/ access modifier=private
+        class method: CalculateSub/ return type=int/ access modifier=public{
+        }
+        class method: CalculateSum/ return type=int/ access modifier=private{
+        }
+    }
+}
+start program{
+    maingen.MoolaParser$EntryClassDeclarationContext class: MainClass{
+        field:Sum/ type=int/ access modifier=public
+        field:Sub/ type=int/ access modifier=private
+        class method: CalculateSub/ return type=int/ access modifier=public{
+        }
+        class method: CalculateSum/ return type=int/ access modifier=private{
+        }
+    }
+    class: loopClass(/ class parent: (MainClass))?{
+        class method: PrintHello/ return type=string/ access modifier=public{
+        }
+    }
+}
+start program{
+    maingen.MoolaParser$EntryClassDeclarationContext class: MainClass{
+        field:Sum/ type=int/ access modifier=public
+        field:Sub/ type=int/ access modifier=private
+        class method: CalculateSub/ return type=int/ access modifier=public{
+        }
+        class method: CalculateSum/ return type=int/ access modifier=private{
+        }
+    }
+    class: loopClass(/ class parent: (MainClass))?{
+        class method: PrintHello/ return type=string/ access modifier=public{
+        }
+    }
+}
+start program{
+    maingen.MoolaParser$EntryClassDeclarationContext class: MainClass{
+        field:Sum/ type=int/ access modifier=public
+        field:Sub/ type=int/ access modifier=private
+        class method: CalculateSub/ return type=int/ access modifier=public{
+        }
+        class method: CalculateSum/ return type=int/ access modifier=private{
+        }
+    }
+    class: loopClass(/ class parent: (MainClass))?{
+    }
+}
+start program{
+    maingen.MoolaParser$EntryClassDeclarationContext class: MainClass{
+        field:Sum/ type=int/ access modifier=public
+        field:Sub/ type=int/ access modifier=private
+        class method: CalculateSub/ return type=int/ access modifier=public{
+        }
+        class method: CalculateSum/ return type=int/ access modifier=private{
+        }
+    }
+}
+start program{
+    maingen.MoolaParser$EntryClassDeclarationContext class: MainClass{
+        field:Sum/ type=int/ access modifier=public
+        field:Sub/ type=int/ access modifier=private
+        class method: CalculateSub/ return type=int/ access modifier=public{
+        }
+        class method: CalculateSum/ return type=int/ access modifier=private{
+        }
+    }
+    class: MyClass(/ class parent: (MainClass))?{
+        class method: publicMethod/ return type=int/ access modifier=public{
+        }
+        class method: privateMethod/ return type=int/ access modifier=private{
+        }
+    }
+}
+start program{
+    maingen.MoolaParser$EntryClassDeclarationContext class: MainClass{
+        field:Sum/ type=int/ access modifier=public
+        field:Sub/ type=int/ access modifier=private
+        class method: CalculateSub/ return type=int/ access modifier=public{
+        }
+        class method: CalculateSum/ return type=int/ access modifier=private{
+        }
+    }
+    class: MyClass(/ class parent: (MainClass))?{
+        field:hi/ type=string/ access modifier=public
+        field:bye/ type=string/ access modifier=private
+        class method: PrintGoodbye/ return type=string/ access modifier=public{
+        }
+        class method: privateMethod/ return type=int/ access modifier=private{
+        }
+    }
+}
+start program{
+    maingen.MoolaParser$EntryClassDeclarationContext class: MainClass{
+        field:Sum/ type=int/ access modifier=public
+        field:Sub/ type=int/ access modifier=private
+        class method: CalculateSub/ return type=int/ access modifier=public{
+        }
+        class method: CalculateSum/ return type=int/ access modifier=private{
+        }
+    }
+    class: MyClass(/ class parent: (MainClass))?{
+        field:hi/ type=string/ access modifier=public
+        field:bye/ type=string/ access modifier=private
+        class method: PrintGoodbye/ return type=string/ access modifier=public{
+        }
+        class method: PrintHi/ return type=string/ access modifier=private{
+        }
+    }
+}
+start program{
+    maingen.MoolaParser$EntryClassDeclarationContext class: MainClass{
+        field:Sum/ type=int/ access modifier=public
+        field:Sub/ type=int/ access modifier=private
+        class method: CalculateSub/ return type=int/ access modifier=public{
+        }
+        class method: CalculateSum/ return type=int/ access modifier=private{
+        }
+    }
+    class: MyClass(/ class parent: (MainClass))?{
+        field:hi/ type=string/ access modifier=public
+        field:bye/ type=string/ access modifier=private
+        class method: PrintGoodbye/ return type=string/ access modifier=public{
+        }
+        class method: PrintHi/ return type=string/ access modifier=private{
+        }
+    }
+    class: LoopClass(/ class parent: (MyClass))?{
+        field:num/ type=int/ access modifier=private
+        class method: PrintHi/ return type=string/ access modifier=private{
+        }
+    }
+}
+start program{
+    maingen.MoolaParser$EntryClassDeclarationContext class: MainClass{
+        field:Sum/ type=int/ access modifier=public
+        field:Sub/ type=int/ access modifier=private
+        class method: CalculateSub/ return type=int/ access modifier=public{
+        }
+        class method: CalculateSum/ return type=int/ access modifier=private{
+        }
+    }
+    class: MyClass(/ class parent: (MainClass))?{
+        field:hi/ type=string/ access modifier=public
+        field:bye/ type=string/ access modifier=private
+        class method: PrintGoodbye/ return type=string/ access modifier=public{
+        }
+        class method: PrintHi/ return type=string/ access modifier=private{
+        }
+    }
+    class: LoopClass(/ class parent: (MyClass))?{
+        field:toPrint/ type=string/ access modifier=private
+    }
+}
+start program{
+    maingen.MoolaParser$EntryClassDeclarationContext class: MainClass{
+        field:Sum/ type=int/ access modifier=public
+        field:Sub/ type=int/ access modifier=private
+        class method: CalculateSub/ return type=int/ access modifier=public{
+        }
+        class method: CalculateSum/ return type=int/ access modifier=private{
+        }
+    }
+    class: MyClass(/ class parent: (MainClass))?{
+        field:hi/ type=string/ access modifier=public
+        field:bye/ type=string/ access modifier=private
+        class method: PrintGoodbye/ return type=string/ access modifier=public{
+        }
+        class method: PrintHi/ return type=string/ access modifier=private{
+        }
+    }
+    class: LoopClass(/ class parent: (MyClass))?{
+        field:toPrint/ type=string/ access modifier=private
+        field:i/ type=int/ access modifier=private
+start program{
+    maingen.MoolaParser$EntryClassDeclarationContext class: MainClass{
+        field:Sum/ type=int/ access modifier=public
+        field:Sub/ type=int/ access modifier=private
+        class method: CalculateSub/ return type=int/ access modifier=public{
+        }
+        class method: CalculateSum/ return type=int/ access modifier=private{
+        }
+    }
+    class: MyClass(/ class parent: (MainClass))?{
+        field:hi/ type=string/ access modifier=public
+        field:bye/ type=string/ access modifier=private
+        class method: PrintGoodbye/ return type=string/ access modifier=public{
+        }
+        class method: PrintHi/ return type=string/ access modifier=private{
+        }
+    }
+    class: LoopClass(/ class parent: (MyClass))?{
+        field:toPrint/ type=string/ access modifier=private
+        field:i/ type=int/ access modifier=private
+start program{
+    maingen.MoolaParser$EntryClassDeclarationContext class: MainClass{
+        field:Sum/ type=int/ access modifier=public
+        field:Sub/ type=int/ access modifier=private
+        class method: CalculateSub/ return type=int/ access modifier=public{
+        }
+        class method: CalculateSum/ return type=int/ access modifier=private{
+        }
+    }
+    class: MyClass(/ class parent: (MainClass))?{
+        field:hi/ type=string/ access modifier=public
+        field:bye/ type=string/ access modifier=private
+        class method: PrintGoodbye/ return type=string/ access modifier=public{
+        }
+        class method: PrintHi/ return type=string/ access modifier=private{
+        }
+    }
+    class: LoopClass(/ class parent: (MyClass))?{
+        field:toPrint/ type=string/ access modifier=private
+        field:in/ type=int/ access modifier=private
+start program{
+    maingen.MoolaParser$EntryClassDeclarationContext class: MainClass{
+        field:Sum/ type=int/ access modifier=public
+        field:Sub/ type=int/ access modifier=private
+        class method: CalculateSub/ return type=int/ access modifier=public{
+        }
+        class method: CalculateSum/ return type=int/ access modifier=private{
+        }
+    }
+    class: MyClass(/ class parent: (MainClass))?{
+        field:hi/ type=string/ access modifier=public
+        field:bye/ type=string/ access modifier=private
+        class method: PrintGoodbye/ return type=string/ access modifier=public{
+        }
+        class method: PrintHi/ return type=string/ access modifier=private{
+        }
+    }
+    class: LoopClass(/ class parent: (MyClass))?{
+        field:toPrint/ type=string/ access modifier=private
+        field:in/ type=int/ access modifier=private
+start program{
+    maingen.MoolaParser$EntryClassDeclarationContext class: MainClass{
+        field:Sum/ type=int/ access modifier=public
+        field:Sub/ type=int/ access modifier=private
+        class method: CalculateSub/ return type=int/ access modifier=public{
+        }
+        class method: CalculateSum/ return type=int/ access modifier=private{
+        }
+    }
+    class: MyClass(/ class parent: (MainClass))?{
+        field:hi/ type=string/ access modifier=public
+        field:bye/ type=string/ access modifier=private
+        class method: PrintGoodbye/ return type=string/ access modifier=public{
+        }
+        class method: PrintHi/ return type=string/ access modifier=private{
+        }
+    }
+    class: LoopClass(/ class parent: (MyClass))?{
+        field:toPrint/ type=string/ access modifier=private
+        field:in/ type=int/ access modifier=private
+start program{
+    maingen.MoolaParser$EntryClassDeclarationContext class: MainClass{
+        field:Sum/ type=int/ access modifier=public
+        field:Sub/ type=int/ access modifier=private
+        class method: CalculateSub/ return type=int/ access modifier=public{
+        }
+        class method: CalculateSum/ return type=int/ access modifier=private{
+        }
+    }
+    class: MyClass(/ class parent: (MainClass))?{
+        field:hi/ type=string/ access modifier=public
+        field:bye/ type=string/ access modifier=private
+        class method: PrintGoodbye/ return type=string/ access modifier=public{
+        }
+        class method: PrintHi/ return type=string/ access modifier=private{
+        }
+    }
+    class: LoopClass(/ class parent: (MyClass))?{
+        field:toPrint/ type=string/ access modifier=private
+        field:in/ type=int/ access modifier=private
+start program{
+    maingen.MoolaParser$EntryClassDeclarationContext class: MainClass{
+        field:Sum/ type=int/ access modifier=public
+        field:Sub/ type=int/ access modifier=private
+        class method: CalculateSub/ return type=int/ access modifier=public{
+        }
+        class method: CalculateSum/ return type=int/ access modifier=private{
+        }
+    }
+    class: MyClass(/ class parent: (MainClass))?{
+        field:hi/ type=string/ access modifier=public
+        field:bye/ type=string/ access modifier=private
+        class method: PrintGoodbye/ return type=string/ access modifier=public{
+        }
+        class method: PrintHi/ return type=string/ access modifier=private{
+        }
+    }
+}
+start program{
+    maingen.MoolaParser$EntryClassDeclarationContext class: MainClass{
+        field:Sum/ type=int/ access modifier=public
+        field:Sub/ type=int/ access modifier=private
+        class method: CalculateSub/ return type=int/ access modifier=public{
+        }
+        class method: CalculateSum/ return type=int/ access modifier=private{
+        }
+    }
+    class: MyClass(/ class parent: (MainClass))?{
+        field:hi/ type=string/ access modifier=public
+        field:bye/ type=string/ access modifier=private
+        class method: PrintGoodbye/ return type=string/ access modifier=public{
+        }
+        class method: PrintHi/ return type=string/ access modifier=private{
+        }
+    }
+    class: LoopClass(/ class parent: (MyClass))?{
+        field:i/ type=int/ access modifier=public
+        field:j/ type=int/ access modifier=public
+        class method: PrintGoodbye/ return type=string/ access modifier=public{
+        }
+        class method: PrintHi/ return type=string/ access modifier=private{
+        }
+    }
+}
+start program{
+    maingen.MoolaParser$EntryClassDeclarationContext class: MainClass{
+        field:Sum/ type=int/ access modifier=public
+        field:Sub/ type=int/ access modifier=private
+        class method: CalculateSub/ return type=int/ access modifier=public{
+        }
+        class method: CalculateSum/ return type=int/ access modifier=private{
+        }
+    }
+    class: MyClass(/ class parent: (MainClass))?{
+        field:hi/ type=string/ access modifier=public
+        field:bye/ type=string/ access modifier=private
+        class method: PrintGoodbye/ return type=string/ access modifier=public{
+        }
+        class method: PrintHi/ return type=string/ access modifier=private{
+        }
+    }
+    class: LoopClass(/ class parent: (MyClass))?{
+        field:i/ type=int/ access modifier=public
+        field:j/ type=int/ access modifier=public
+        class method: PrintLoop/ return type=string/ access modifier=public{
+        }
+        class method: PrintHi/ return type=string/ access modifier=private{
+        }
+    }
+}
+start program{
+    maingen.MoolaParser$EntryClassDeclarationContext class: MainClass{
+        field:Sum/ type=int/ access modifier=public
+        field:Sub/ type=int/ access modifier=private
+        class method: CalculateSub/ return type=int/ access modifier=public{
+        }
+        class method: CalculateSum/ return type=int/ access modifier=private{
+        }
+    }
+    class: MyClass(/ class parent: (MainClass))?{
+        field:hi/ type=string/ access modifier=public
+        field:bye/ type=string/ access modifier=private
+        class method: PrintGoodbye/ return type=string/ access modifier=public{
+        }
+        class method: PrintHi/ return type=string/ access modifier=private{
+        }
+    }
+    class: LoopClass(/ class parent: (MyClass))?{
+        field:i/ type=int/ access modifier=public
+        field:j/ type=int/ access modifier=public
+        class method: PrintLoop/ return type=string/ access modifier=public{
+        }
+        class method: PrintHi/ return type=string/ access modifier=private{
+        }
+    }
+}
+start program{
+    maingen.MoolaParser$EntryClassDeclarationContext class: MainClass{
+        field:Sum/ type=int/ access modifier=public
+        field:Sub/ type=int/ access modifier=private
+        class method: CalculateSub/ return type=int/ access modifier=public{
+        }
+        class method: CalculateSum/ return type=int/ access modifier=private{
+        }
+    }
+    class: MyClass(/ class parent: (MainClass))?{
+        field:hi/ type=string/ access modifier=public
+        field:bye/ type=string/ access modifier=private
+        class method: PrintGoodbye/ return type=string/ access modifier=public{
+        }
+        class method: PrintHi/ return type=string/ access modifier=private{
+        }
+    }
+    class: LoopClass(/ class parent: (MyClass))?{
+        field:i/ type=int/ access modifier=public
+        field:j/ type=int/ access modifier=public
+        class method: PrintLoop/ return type=string/ access modifier=public{
+        }
+        class method: PrintHi/ return type=string/ access modifier=private{
+        }
+    }
+}
+start program{
+    maingen.MoolaParser$EntryClassDeclarationContext class: MainClass{
+        field:Sum/ type=int/ access modifier=public
+        field:Sub/ type=int/ access modifier=private
+        class method: CalculateSub/ return type=int/ access modifier=public{
+        }
+        class method: CalculateSum/ return type=int/ access modifier=private{
+        }
+    }
+    class: MyClass(/ class parent: (MainClass))?{
+        field:hi/ type=string/ access modifier=public
+        field:bye/ type=string/ access modifier=private
+        class method: PrintGoodbye/ return type=string/ access modifier=public{
+        }
+        class method: PrintHi/ return type=string/ access modifier=private{
+        }
+    }
+    class: LoopClass(/ class parent: (MyClass))?{
+        field:i/ type=int/ access modifier=public
+        field:j/ type=int/ access modifier=public
+        class method: PrintLoop/ return type=string/ access modifier=public{
+        }
+        class method: PrintHi/ return type=string/ access modifier=private{
+        }
+    }
+}
+start program{
+    maingen.MoolaParser$EntryClassDeclarationContext class: MainClass{
+        field:Sum/ type=int/ access modifier=public
+        field:Sub/ type=int/ access modifier=private
+        class method: CalculateSub/ return type=int/ access modifier=public{
+        }
+        class method: CalculateSum/ return type=int/ access modifier=private{
+        }
+start program{
+    maingen.MoolaParser$EntryClassDeclarationContext class: MainClass{
+        field:Sum/ type=int/ access modifier=public
+        field:Sub/ type=int/ access modifier=private
+        class method: CalculateSub/ return type=int/ access modifier=public{
+        }
+        class method: CalculateSum/ return type=int/ access modifier=private{
+        }
+        class method: main/ return type=int/ access modifier=public{
+        }
+    }
+    class: MyClass(/ class parent: (MainClass))?{
+        field:hi/ type=string/ access modifier=public
+        field:bye/ type=string/ access modifier=private
+        class method: PrintGoodbye/ return type=string/ access modifier=public{
+        }
+        class method: PrintHi/ return type=string/ access modifier=private{
+        }
+    }
+    class: LoopClass(/ class parent: (MyClass))?{
+        field:i/ type=int/ access modifier=public
+        field:j/ type=int/ access modifier=public
+        class method: PrintLoop/ return type=string/ access modifier=public{
+        }
+    }
+}
+start program{
+    maingen.MoolaParser$EntryClassDeclarationContext class: MainClass{
+        field:Sum/ type=int/ access modifier=public
+        field:Sub/ type=int/ access modifier=private
+        class method: CalculateSub/ return type=int/ access modifier=public{
+        }
+        class method: CalculateSum/ return type=int/ access modifier=private{
+        }
+        class method: main/ return type=int/ access modifier=public{
+        }
+    }
+    class: MyClass(/ class parent: (MainClass))?{
+        field:hi/ type=string/ access modifier=public
+        field:bye/ type=string/ access modifier=private
+        class method: PrintGoodbye/ return type=string/ access modifier=public{
+        }
+        class method: PrintHi/ return type=string/ access modifier=private{
+        }
+    }
+    class: LoopClass(/ class parent: (MyClass))?{
+        field:i/ type=int/ access modifier=public
+        field:j/ type=int/ access modifier=public
+        class method: PrintLoop/ return type=string/ access modifier=public{
+        }
+    }
+}

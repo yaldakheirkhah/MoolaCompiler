@@ -13,7 +13,7 @@ import java.io.IOException;
  */
 public class Compiler {
     public static void main(String[] args) throws IOException {
-        CharStream stream = CharStreams.fromFileName("./sample/test.mla");
+        CharStream stream = CharStreams.fromFileName("./sample/test2.mla");
         MoolaLexer lexer = new MoolaLexer(stream);
         TokenStream token = new CommonTokenStream(lexer);
         MoolaParser parser = new MoolaParser(token);

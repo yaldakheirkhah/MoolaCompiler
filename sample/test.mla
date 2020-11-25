@@ -5,7 +5,7 @@ entry class MysecondClass:
     end
 end
 
-class MyClass:
+class MyClass inherits MysecondClass:
     public field publicVar int;
     private field privateVar int;
     public function publicMethod(a:int) returns int:

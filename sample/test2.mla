@@ -1,0 +1,46 @@
+entry class MainClass:
+    public field Sum int;
+    private field Sub int;
+    public function CalculateSub(a:int , b:int) returns int:
+        print("a-b=");
+        sub = a-b;
+        return sub;
+    end
+    private function CalculateSum(a:int , b:int) returns int:
+        print("a+b=");
+        sum = a+b;
+        return sum;
+    end
+    public function main() returns int :
+        print("Hello World!!!");
+        return 0;
+    end
+end
+
+
+class MyClass inherits MainClass:
+    public field hi string;
+    private field bye string;
+    public function PrintGoodbye(name:string) returns string:
+        bye = "bye" + name;
+        return bye;
+    end
+    private function PrintHi(name:string) returns string:
+        hi = "hi" + name;
+        return hi;
+    end
+end
+
+class LoopClass inherits MyClass:
+    public field i int;
+    public field j int;
+
+    public function PrintLoop(name:string) returns string:
+        while(i<j) begin
+        return name;
+        end
+    end
+
+end
+
+
